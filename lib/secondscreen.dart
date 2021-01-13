@@ -377,13 +377,14 @@ class _SecondScreenState extends State<SecondScreen> {
                     child: RaisedButton(
                       onPressed: (){
                         setState(() {
-                          if(s==0){if(click2==100){
+                          if(s==0){
+                            if(click2==100){
                             click+=2;
-                            click2 = click%2;}
-                          s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
-                          int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
-                          var a=1;
-                          if(a==1){
+                            click2 = click%2;
+                            s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+                            int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
+                            var a=1;
+                            if(a==1){
                             if(g==1){
                               click1=0;
                             }
@@ -412,9 +413,9 @@ class _SecondScreenState extends State<SecondScreen> {
                               click9=0;
                             }
                           }
-                          s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+                            s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
 
-
+                          }
                           }
                         });
                       },
@@ -441,7 +442,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         setState(() {
                           if(s==0){if(click3==100){
                             click+=2;
-                            click3 = click%2;}
+                            click3 = click%2;
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           var a=1;
@@ -475,6 +476,8 @@ class _SecondScreenState extends State<SecondScreen> {
                             }
                           }
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+
+                          }
 
 
                           }
@@ -509,8 +512,8 @@ class _SecondScreenState extends State<SecondScreen> {
                             setState(() {
                               if(s==0){if(click4==100){
                                 click+=2;
-                                click4 = click%2;}
-                              s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);}
+                                click4 = click%2;
+                              s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
                               int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
                               var a=1;
                               if(a==1){
@@ -543,6 +546,8 @@ class _SecondScreenState extends State<SecondScreen> {
                                 }
                               }
                               s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+                              }
+                              }
                             });
                           },
                           padding: EdgeInsets.all(2),
@@ -568,7 +573,7 @@ class _SecondScreenState extends State<SecondScreen> {
                             setState(() {
                               if(s==0){if(click5==100){
                                 click+=2;
-                                click5 = click%2;}
+                                click5 = click%2;
                               s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
                               int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
                               var a=1;
@@ -602,6 +607,7 @@ class _SecondScreenState extends State<SecondScreen> {
                                 }
                               }
                               s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+                              }
 
 
                               }
@@ -631,7 +637,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               if(s==0){if(click6==100){
                                 click+=2;
                                 click6 = click%2;
-                              }
+
                               s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
                               int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
                               var a=1;
@@ -665,6 +671,8 @@ class _SecondScreenState extends State<SecondScreen> {
                                 }
                               }
                               s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+
+                              }
 
 
                               }
@@ -705,7 +713,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         setState(() {
                           if(s==0){if(click7==100){
                             click+=2;
-                            click7 = click%2;}
+                            click7 = click%2;
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           var a=1;
@@ -739,6 +747,8 @@ class _SecondScreenState extends State<SecondScreen> {
                             }
                           }
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+
+                          }
 
 
                           }
@@ -767,7 +777,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         setState(() {
                           if(s==0){if(click8==100){
                             click+=2;
-                            click8 = click%2;}
+                            click8 = click%2;
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           var a=1;
@@ -801,6 +811,8 @@ class _SecondScreenState extends State<SecondScreen> {
                             }
                           }
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+
+                          }
 
 
                           }
@@ -829,7 +841,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         setState(() {
                           if(s==0){if(click9==100){
                             click+=2;
-                            click9 = click%2;}
+                            click9 = click%2;
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           int g = ComputersMove(click, click1, click2, click3, click4, click5, click6, click7, click8, click9);
                           var a=1;
@@ -863,6 +875,7 @@ class _SecondScreenState extends State<SecondScreen> {
                             }
                           }
                           s = CheckGameStatus( click ,click1, click2, click3, click4, click5, click6, click7, click8, click9);
+                          }
 
                           }
 
