@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tictactoe/Settings.dart';
-import 'package:tictactoe/Stats.dart';
+import 'package:tictactoe/Credits.dart';
+import 'package:tictactoe/meme.dart';
 import 'colors.dart';
 import 'secondscreen.dart';
 
@@ -34,7 +34,7 @@ class MainScreen extends StatelessWidget {
                     Card(
                       child: RaisedButton(
                         padding: EdgeInsets.all(2),
-                        color: Colors.black,
+                        color: Color(colButtons),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
@@ -58,7 +58,7 @@ class MainScreen extends StatelessWidget {
                     Card(
                       child: RaisedButton(
                         padding: EdgeInsets.all(2),
-                        color: Colors.black,
+                        color: Color(colButtons),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
